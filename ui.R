@@ -2,7 +2,7 @@ library(shiny)
 
 fluidPage(
   titlePanel("Calculate mechanical advantage", windowTitle = "MA Calculator"),
-  
+
   sidebarLayout(
     # inputs go in the sidebar in sliders
     sidebarPanel(
@@ -14,12 +14,10 @@ fluidPage(
                   round = 1,
                   step = 0.1)
     ),
-    
+
     # plot goes in the main panel
     mainPanel(
       plotOutput("ma.plot")
     )
-    
-    
   )
 )
